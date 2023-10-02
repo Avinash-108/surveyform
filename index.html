@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey Form</title>
+<link rel="stylesheet" href="styles.css">  
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Fill this survey form</p>
+  <form id="survey-form">
+  <fieldset>  
+  <label id="name-label">  
+    Enter your name: <input id="name" class="field1" type="text" placeholder="Ak" required>
+  </label>
+  <label id="email-label">
+    Enter your email: <input id="email" class="field1" type="email" placeholder="ak@gmail.com" required>
+  </label>
+  <label id="number-label">
+    Enter your number: <input id="number" class="field1" type="number" placeholder="0123456789" min="10" max="12">
+  </label>
+  </fieldset>
+  <fieldset class="2">
+    <label>Which option best describes your current role?<br>
+      <select id="dropdown">
+        <option>Select one</option>
+        <option>Student</option>
+        <option>Full time employee</option>
+        <option>Other</option>
+      </select>
+    </label>
+    <label class="radio1">Gender
+      <input type="radio" name="gender" class="radio1" value="male">Male
+      <input type="radio" name="gender" class="radio1" value="female">Female
+    </label>
+    <label class="radio2">Interested in courses
+      <input type="radio" class="radio2" name="radio-course" value="yes">Yes
+      <input type="radio" class="radio2" name="radio-course"value="no">No
+    </label>
+    <label class="check" id>Which courses do you like the most?<br>
+      <input type="checkbox" class="check" value="rwd"> Responsive Web Design<br>
+      <input type="checkbox" class="check" value="dv"> Data Visualization<br>
+      <input type="checkbox" class="check" value="fel"> Front End Libraries<br>
+      <input type="checkbox" class="check" value="js" > Javascript<br>
+      <input type="checkbox" class="check" value="is">Information Security<br>
+      <input type="checkbox" class="check" value="rd">Relational Database<br>
+      <input type="checkbox" class="check" value="c">C#<br>
+    </label>
+    <label>Feedback<br>
+      <textarea rows="6" cols="40"></textarea>
+    </label>
+  </fieldset>
+  <fieldset class="3">
+    <label >
+      <input id="submit" type="submit">
+    </label>
+  </fieldset>
+  </form>
+</body>    
+</html>
